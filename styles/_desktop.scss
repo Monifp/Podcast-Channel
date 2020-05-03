@@ -30,14 +30,15 @@ header {
             width: 36x;
         }
 
-        .menu-activador-action {
+        .hamburger-btn {
             display: none;
         }
 
-        .menu-activador-action:checked~.menulist {
+        .hamburger-btn:checked~.menulist {
             display: none;
         }
 
+        
         .menulist {
             display: block; 
             background-color: transparent;
@@ -45,7 +46,7 @@ header {
             width: auto;
             top: auto;
             left: auto;
-
+        
             li {
                display: inline-block;
                color: $text-color;

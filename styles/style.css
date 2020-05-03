@@ -69,6 +69,7 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -82,11 +83,23 @@ table {
     height: 24px;
     width: 24px;
   }
-  header nav .menu-activador-action {
+  header nav .hamburger-btn-action {
     display: none;
   }
-  header nav .menu-activador-action:checked ~ .menulist {
+  header nav .hamburger-btn-action:checked ~ .menulist {
     display: block;
+  }
+  header nav .hamburger-btn-action:checked ~ label .hamburger-btn .bars {
+    display: none;
+  }
+  header nav .hamburger-btn-action:checked ~ label .hamburger-btn .close {
+    display: block;
+  }
+  header nav .hamburger-btn .bars {
+    display: block;
+  }
+  header nav .hamburger-btn .close {
+    display: none;
   }
   header nav .menulist {
     display: none;
@@ -103,10 +116,10 @@ table {
             box-sizing: border-box;
     text-transform: uppercase;
   }
-  .maintitle {
+  *.maintitle {
     background-color: green;
   }
-  .maintitle h1 {
+  *.maintitle h1 {
     font-family: "IBM Flex Sans", sans-serif;
     font-size: 36px;
     padding: 30px, 0, 24px, 0;
@@ -203,10 +216,10 @@ table {
     height: 36px;
     width: 36x;
   }
-  header nav .menu-activador-action {
+  header nav .hamburger-btn {
     display: none;
   }
-  header nav .menu-activador-action:checked ~ .menulist {
+  header nav .hamburger-btn:checked ~ .menulist {
     display: none;
   }
   header nav .menulist {
