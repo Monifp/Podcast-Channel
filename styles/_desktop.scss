@@ -57,28 +57,44 @@ header {
 
 .maintitle {
     background-color: white;
-    padding: 120px, 0, 0px, 0;
+    padding: 120px 0 0px 0;
 
 
     h1{
         font-family: $font-secondary;
         font-size: 64px;
+       
+        br {
+            display: none; 
+        }
+        .bluedot {
+            color: $primary-color;
+        }
     }
 }   
 
-p {
+p  {
     font-family: $font-primary;
     font-size: 16px;
     color: $text-color;
     letter-spacing: 0;
     line-height: 24px;
-    padding: 28px, 0, 28px,0;
+    padding-bottom: 56px;
+    max-width: 628px;
 }
 
 .mobile {
     display: none;
 }
 
+.desktop {
+    display: block;
+}
+
+.buttons {
+    max-width: 226px;
+
+}
 
 
 /* iframes */
