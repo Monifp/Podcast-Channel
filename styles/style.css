@@ -135,52 +135,27 @@ table {
     line-height: 22px;
     padding: 30px 0 16px 0;
   }
-  /* iframes */
-  .Spotify {
+  .spotify {
     -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
             clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     width: 100%;
-    height: 1042.5px;
   }
-  .Spotify .episodios {
-    width: 800px;
-    margin: auto;
+  .spotify h2 {
+    color: white;
+    font-size: 36px;
+    font-family: "IBM Flex Sans", sans-serif;
+    padding-top: 64px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 320px) {
-  .Spotify .episodios {
-    width: 90%;
+  .spotify .podcast {
+    padding: 16px 0 156px 0;
   }
-}
-
-@media (min-width: 320px) {
-  .Spotify .episindividuales {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 320px) {
-  .Spotify .episindividuales {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 320px) {
-  .Spotify .episindividuales .epi {
-    height: 232px;
-    position: relative;
-  }
-  .Spotify .episindividuales iframe {
+  .spotify iframe {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    margin-top: 11px;
+  }
+  .spotify:first-child {
+    margin-top: 0;
   }
 }
 
@@ -235,7 +210,7 @@ table {
   }
   .maintitle {
     background-color: white;
-    padding: 120px 0 0px 0;
+    padding: 120px 0 0 0;
   }
   .maintitle h1 {
     font-family: "IBM Flex Sans", sans-serif;
@@ -265,20 +240,32 @@ table {
   .buttons {
     max-width: 226px;
   }
-  /* iframes */
-  .Spotify {
-    -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-            clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  .spotify {
+    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     width: 100%;
-    height: 1042.5px;
   }
-  .Spotify .episindividuales {
+  .spotify h2 {
+    color: white;
+    font-size: 36px;
+    font-family: "IBM Flex Sans", sans-serif;
+    padding-top: 186px;
+  }
+  .spotify .podcast {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 10px;
+    padding: 16px 0 156px 0;
+  }
+  .spotify iframe {
+    width: 100%;
+    margin-top: auto;
+  }
+  .spotify:first-child {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
