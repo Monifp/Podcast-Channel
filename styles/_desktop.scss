@@ -98,22 +98,24 @@ p  {
 
 
 .spotify {
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     width: 100%;
     
     h2 {
         color: white;
-        font-size: 36px;
+        font-size: 48px;
         font-family: $font-secondary;
-        padding: 186px 0 26px 0 
+        padding: 186px 0 26px 0; 
+        max-width: 1040px;
+        margin: 0 auto;
         
     }
 
     .podcast {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 20px;
         padding: 16px 0 156px 0;
       
     }
@@ -123,36 +125,43 @@ p  {
         margin-top: auto;
     }
 
-    &:first-child {
-        margin-top: 0;
-    }
+    
 }
 
 .wearefrom {
     color: $text-color;
     font-family: $font-secondary;
+
+    .container {
+        max-width: 984px;
+        display: flex;
+        justify-content: space-between; 
     
-
-
+    
         img {
-            width: 100%;
-            margin-top: -90px;
+            max-width: 458px;
+            margin-top: -120px;
             position: relative;
             z-index: 1;
         }
 
-        h2 {
-            color: $text-color;
-            font-family: $font-secondary;
-            font-size: 36px;
-            margin: 27px 0 8px 0;
-        }
+        .content_text {
+            max-width: 464px;
 
-        p {
-            color: $text-color;
-            font-family: $font-primary;
-            font-size: 14px;
-            line-height: 22px;
-        }
+            h2 {
+                color: $text-color;
+                font-family: $font-secondary;
+                font-size: 48px;
+                margin: 27px 0 8px 0;
+                }
     
+            p {
+                color: $text-color;
+                font-family: $font-primary;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+      
+    }
 }

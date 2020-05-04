@@ -263,31 +263,64 @@ table {
     max-width: 226px;
   }
   .spotify {
-    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     width: 100%;
   }
   .spotify h2 {
     color: white;
-    font-size: 36px;
+    font-size: 48px;
     font-family: "IBM Flex Sans", sans-serif;
     padding: 186px 0 26px 0;
+    max-width: 1040px;
+    margin: 0 auto;
   }
   .spotify .podcast {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     padding: 16px 0 156px 0;
   }
   .spotify iframe {
     width: 100%;
     margin-top: auto;
   }
-  .spotify:first-child {
-    margin-top: 0;
+  .wearefrom {
+    color: #060A24;
+    font-family: "IBM Flex Sans", sans-serif;
+  }
+  .wearefrom .container {
+    max-width: 984px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wearefrom .container img {
+    max-width: 458px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+  }
+  .wearefrom .container .content_text {
+    max-width: 464px;
+  }
+  .wearefrom .container .content_text h2 {
+    color: #060A24;
+    font-family: "IBM Flex Sans", sans-serif;
+    font-size: 48px;
+    margin: 27px 0 8px 0;
+  }
+  .wearefrom .container .content_text p {
+    color: #060A24;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
