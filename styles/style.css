@@ -250,7 +250,7 @@ table {
     color: white;
     font-size: 36px;
     font-family: "IBM Flex Sans", sans-serif;
-    padding-top: 186px;
+    padding: 186px 0 26px 0;
   }
   .spotify .podcast {
     display: -ms-grid;
