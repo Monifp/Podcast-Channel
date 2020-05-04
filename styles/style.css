@@ -188,11 +188,11 @@ table {
   .guests .invite li {
     display: block;
     margin-bottom: -4px;
-    img-width: 100%;
+    img-height: 243px;
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .container {
     max-width: 1240;
   }
@@ -221,7 +221,7 @@ table {
   }
   header nav .logo {
     height: 36px;
-    width: 36x;
+    width: 36px;
   }
   header nav .hamburger-btn {
     display: none;
@@ -293,7 +293,7 @@ table {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 16px 0 156px 0;
+    padding: 16px 0 236.6px 0;
   }
   .spotify iframe {
     width: 100%;
@@ -314,23 +314,23 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: -80px;
   }
-  .wearefrom img {
+  .wearefrom .container img {
     max-width: 458px;
-    margin-top: -120px;
     position: relative;
     z-index: 1;
   }
-  .wearefrom .content_text {
+  .wearefrom .container .content_text {
     max-width: 464px;
   }
-  .wearefrom .content_text h2 {
+  .wearefrom .container .content_text h2 {
     color: #060A24;
     font-family: "IBM Flex Sans", sans-serif;
     font-size: 48px;
     margin: 27px 0 8px 0;
   }
-  .wearefrom .content_text p {
+  .wearefrom .container .content_text p {
     color: #060A24;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;

@@ -1,12 +1,13 @@
 @import "_reset.scss";
+@import "_variables.scss";
 @media (min-width: 320px) {
     @import '_mobile.scss';
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
     @import '_desktop.scss';
 } 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
-@import "_variables.scss";
+
 

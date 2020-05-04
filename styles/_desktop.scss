@@ -27,7 +27,8 @@ header {
 
         .logo {
             height: 36px;
-            width: 36x;
+            width: 36px;
+            
         }
 
         .hamburger-btn {
@@ -116,7 +117,7 @@ p  {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        padding: 16px 0 156px 0;
+        padding: 16px 0 236.6px 0;
       
     }
 
@@ -131,17 +132,17 @@ p  {
 .wearefrom {
     color: $text-color;
     font-family: $font-secondary;
+    
 
     .container {
         max-width: 984px;
         display: flex;
         justify-content: space-between; 
         align-items: center;
-    
-    }
+        margin-top: -80px;
+
         img {
             max-width: 458px;
-            margin-top: -120px;
             position: relative;
             z-index: 1;
         }
@@ -163,6 +164,9 @@ p  {
                 line-height: 24px;
             }
         }
+        
+    }
+        
    
 }
 
