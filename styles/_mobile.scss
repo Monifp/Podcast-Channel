@@ -127,13 +127,14 @@ p {
     color: $text-color;
     font-family: $font-secondary;
     
-
-
+    .container {
+        top: -90px;
+        position: relative;
+        z-index: 1;
+    
         img {
             width: 100%;
-            margin-top: -90px;
-            position: relative;
-            z-index: 1;
+           
         }
 
         h2 {
@@ -149,5 +150,23 @@ p {
             font-size: 14px;
             line-height: 22px;
         }
-    
+    }
+}
+
+.guests {
+    h2 {
+        font-size: 36px;
+        font-family: $font-secondary;
+    }
+
+    .invite {
+            li {
+            display: block;
+            margin-bottom: -4px;
+            img: {
+                width: 100%
+            }    
+        
+        }
+    }
 }

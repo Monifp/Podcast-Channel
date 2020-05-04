@@ -161,23 +161,34 @@ table {
     color: #060A24;
     font-family: "IBM Flex Sans", sans-serif;
   }
-  .wearefrom img {
-    width: 100%;
-    margin-top: -90px;
+  .wearefrom .container {
+    top: -90px;
     position: relative;
     z-index: 1;
   }
-  .wearefrom h2 {
+  .wearefrom .container img {
+    width: 100%;
+  }
+  .wearefrom .container h2 {
     color: #060A24;
     font-family: "IBM Flex Sans", sans-serif;
     font-size: 36px;
     margin: 27px 0 8px 0;
   }
-  .wearefrom p {
+  .wearefrom .container p {
     color: #060A24;
     font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     line-height: 22px;
+  }
+  .guests h2 {
+    font-size: 36px;
+    font-family: "IBM Flex Sans", sans-serif;
+  }
+  .guests .invite li {
+    display: block;
+    margin-bottom: -4px;
+    img-width: 100%;
   }
 }
 
@@ -300,23 +311,26 @@ table {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .wearefrom .container img {
+  .wearefrom img {
     max-width: 458px;
     margin-top: -120px;
     position: relative;
     z-index: 1;
   }
-  .wearefrom .container .content_text {
+  .wearefrom .content_text {
     max-width: 464px;
   }
-  .wearefrom .container .content_text h2 {
+  .wearefrom .content_text h2 {
     color: #060A24;
     font-family: "IBM Flex Sans", sans-serif;
     font-size: 48px;
     margin: 27px 0 8px 0;
   }
-  .wearefrom .container .content_text p {
+  .wearefrom .content_text p {
     color: #060A24;
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
