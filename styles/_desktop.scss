@@ -133,7 +133,6 @@ p  {
     color: $text-color;
     font-family: $font-secondary;
     
-
     .container {
         max-width: 984px;
         display: flex;
@@ -166,7 +165,20 @@ p  {
         }
         
     }
-        
-   
+    
 }
 
+.guests {
+   
+    .container {
+        max-width: 984px;
+        font-size: 48px;
+        font-family: $font-secondary;
+        margin-bottom: 36px;
+    }
+
+    .invite {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+       }
+}
