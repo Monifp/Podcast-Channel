@@ -157,6 +157,28 @@ table {
   .spotify:first-child {
     margin-top: 0;
   }
+  .wearefrom {
+    color: #060A24;
+    font-family: "IBM Flex Sans", sans-serif;
+  }
+  .wearefrom img {
+    width: 100%;
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
+  }
+  .wearefrom h2 {
+    color: #060A24;
+    font-family: "IBM Flex Sans", sans-serif;
+    font-size: 36px;
+    margin: 27px 0 8px 0;
+  }
+  .wearefrom p {
+    color: #060A24;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media (min-width: 780px) {
