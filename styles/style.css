@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;800&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -192,11 +192,48 @@ table {
   .guests .invite li img {
     width: 100%;
   }
+  /*falta hacerlo bold*/
+  .themes {
+    font-family: "IBM Flex Sans", sans-serif;
+  }
+  .themes h2 {
+    font-size: 36px;
+    margin: 48px 0 24px 0;
+  }
+  .themes .themeslist {
+    text-align: center;
+  }
+  .themes .themeslist li {
+    margin-bottom: 36px;
+  }
+  .themes .themeslist li img {
+    margin: 13px 0;
+  }
+  .themes .themeslist li h3 {
+    font-size: 24px;
+    font-weight: 800px;
+  }
+  .lastnews .container {
+    max-width: 984px;
+    padding: 64px 0 67px 0;
+    -webkit-clip-path: polygon(0 3%, 100% 0%, 0 100%, 100% 100%);
+            clip-path: polygon(0 3%, 100% 0%, 0 100%, 100% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+  }
+  .lastnews .container h2 {
+    color: white;
+    margin-bottom: 36px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    font-family: "IBM Flex Sans", sans-serif;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 1240;
+    max-width: 984px;
   }
   .buttons {
     background-color: #00F3BB;
@@ -349,6 +386,26 @@ table {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .themes .container {
+    max-width: 984px;
+    font-family: "IBM Flex Sans", sans-serif;
+    /**LA FUENTE NO ES BOLD*/
+  }
+  .themes .container h2 {
+    font-size: 48px;
+    margin: 64px 0 56px 0;
+  }
+  .themes .container .themeslist {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .themes .container h3 {
+    font-size: 24px;
+    text-align: center;
+    height: 600px;
   }
 }
 /*# sourceMappingURL=style.css.map */
