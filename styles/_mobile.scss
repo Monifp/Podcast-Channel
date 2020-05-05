@@ -200,13 +200,13 @@ p {
 }
 
 .lastnews {
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%; 
     .container {
-        max-width: 984px;
-        padding: 64px 0 67px 0;
-        clip-path: polygon(0 3%, 100% 0%, 0 100%, 100% 100%);
-        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        width: 100%;   
-    
+        padding: 64px 0 67px 0; 
+    }
+         
         h2 {
             color: white;
             margin-bottom: 36px;
@@ -214,13 +214,5 @@ p {
             text-align: center;
             line-height: 42px;
             font-family: $font-secondary;
-
         }
-    
-    
-    
     }
-
-    
-
-}
