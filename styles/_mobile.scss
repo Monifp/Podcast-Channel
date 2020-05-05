@@ -216,3 +216,24 @@ p {
             font-family: $font-secondary;
         }
     }
+    
+    footer {
+        .container {
+            text-align: center;
+
+            p{
+                margin: 24px 0 16px 0;
+            }
+        
+            .socialmedia {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr); 
+
+                a {
+                    color: $text-color;
+
+                }
+    
+            }
+        }
+    }    

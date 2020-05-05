@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -230,6 +231,21 @@ table {
     line-height: 42px;
     font-family: "IBM Flex Sans", sans-serif;
   }
+  footer .container {
+    text-align: center;
+  }
+  footer .container p {
+    margin: 24px 0 16px 0;
+  }
+  footer .container .socialmedia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  footer .container .socialmedia a {
+    color: #060A24;
+  }
 }
 
 @media (min-width: 768px) {
@@ -426,6 +442,18 @@ table {
   .lastnews .container .buttons {
     max-width: 345px;
     margin: 0 auto;
+  }
+  footer .container {
+    max-width: 986px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container a {
+    color: #060A24;
   }
 }
 /*# sourceMappingURL=style.css.map */

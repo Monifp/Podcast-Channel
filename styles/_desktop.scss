@@ -228,3 +228,18 @@ p  {
         }
     }
 }
+
+footer {
+    .container {
+        max-width: 986px;
+        display: flex;
+        justify-content: space-between; 
+
+        a {
+            color: $text-color;
+
+        }
+
+        
+    }
+}    
