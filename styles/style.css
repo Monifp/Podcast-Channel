@@ -212,7 +212,7 @@ table {
   }
   .themes .themeslist li h3 {
     font-size: 24px;
-    font-weight: 800px;
+    font-weight: 800;
   }
   .lastnews {
     -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
@@ -407,7 +407,6 @@ table {
   .themes .container {
     max-width: 984px;
     font-family: "IBM Flex Sans", sans-serif;
-    /**LA FUENTE NO ES BOLD*/
   }
   .themes .container h2 {
     font-size: 48px;
@@ -452,7 +451,21 @@ table {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  footer .container a {
+  footer .container p {
+    margin: 36px 0 32px 0;
+  }
+  footer .container p .socialmedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container p .socialmedia li {
+    margin-left: 36px;
+  }
+  footer .container p .socialmedia li a {
     color: #060A24;
   }
 }

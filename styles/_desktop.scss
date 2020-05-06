@@ -198,7 +198,7 @@ p  {
                 grid-template-columns: repeat(4, 1fr);
              
            }
-/**LA FUENTE NO ES BOLD*/
+
            h3 {
                font-size: 24px;
                text-align: center;
@@ -233,13 +233,26 @@ footer {
     .container {
         max-width: 986px;
         display: flex;
-        justify-content: space-between; 
-
-        a {
-            color: $text-color;
-
-        }
-
+        justify-content: space-between;
+            
+        p {
+            margin: 36px 0 32px 0; 
+            
         
+            .socialmedia {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                margin-left: 36px; 
+                
+                a {
+                    color: $text-color
+                }
+                
+                }
+
+            }                          
+        }
     }
 }    
