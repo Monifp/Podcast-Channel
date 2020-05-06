@@ -193,7 +193,6 @@ table {
   .guests .invite li img {
     width: 100%;
   }
-  /*falta hacerlo bold*/
   .themes {
     font-family: "IBM Flex Sans", sans-serif;
   }
@@ -454,18 +453,22 @@ table {
   footer .container p {
     margin: 36px 0 32px 0;
   }
-  footer .container p .socialmedia {
+  footer .container .socialmedia {
+    margin: 36px 0 32px 0;
+  }
+  footer .container .socialmedia li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  footer .container p .socialmedia li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 36px;
   }
-  footer .container p .socialmedia li a {
+  footer .container .socialmedia li a {
     color: #060A24;
   }
 }

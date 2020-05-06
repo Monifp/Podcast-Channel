@@ -237,14 +237,16 @@ footer {
             
         p {
             margin: 36px 0 32px 0; 
-            
-        
+        }         
             .socialmedia {
-                display: flex;
-                justify-content: space-between;
+                
+                margin: 36px 0 32px 0;
 
                 li {
-                margin-left: 36px; 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 36px;
                 
                 a {
                     color: $text-color
@@ -253,6 +255,6 @@ footer {
                 }
 
             }                          
-        }
+        
     }
 }    
