@@ -1,11 +1,11 @@
 @import "./styles/_reset.scss";
 @import "./styles/_variables.scss";
 @media (min-width: 320px) {
-    @import '_mobile.scss';
+    @import './styles/_mobile.scss';
 }
 
 @media (min-width: 768px) {
-    @import '_desktop.scss';
+    @import './styles/_desktop.scss';
 } 
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;800&display=swap');
