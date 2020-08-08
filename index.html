@@ -19,18 +19,19 @@
       <input type='checkbox' id="hamburger-btn-action" class='hamburger-btn-action'>
 
       <label for="hamburger-btn-action">
-        <div class="hamburger-btn">
+        
+        <span class="hamburger-btn">
           <i class="fa fa-bars bars"></i>
           <i class="fa fa-times close"></i>
-        </div>
+        </span>
 
       </label>
+
       <ul class='menulist'>
-        <li>Episodios</li>
-        <li>Nosotros</li>
-        <li>Entrevistas</li>
-        <li>Topicos</li>
-        </li>
+        <li><a href=#Episodios>Episodios</a></li>
+        <li><a href=#Nosotros>Nosotros</a></li>
+        <li><a href=#Entrevistas>Entrevistas</a></li>
+        <li><a href=#Topicos>Topicos</a></li>
       </ul>
     </nav>
   </header>
@@ -53,8 +54,8 @@
         jueves cada 15 días.
       </p>
 
-      <div class='buttons'>
-        Conocé más
+      <div class='buttons'> 
+       <a href="https://syntax.fm/" target='_blank'>Conocé más</a>
       </div>
     </div>
   </section>
@@ -62,25 +63,25 @@
 
   <section class='spotify'>
     <div class='container'>
-      <h2>Episodios</h2>
-      <section class='podcast'>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allowtransparency="true"
-          allow="encrypted-media" scrolling='no'></iframe>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allowtransparency="true"
-          allow="encrypted-media" scrolling='no'></iframe>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allowtransparency="true"
-          allow="encrypted-media" scrolling='no'></iframe>
-        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allowtransparency="true"
-          allow="encrypted-media" scrolling='no'></iframe>
-      </section>
+      <h2 id='Episodios'> Episodios</h2>
+      <div class='podcast'>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" 
+          allow="encrypted-media" ></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" 
+          allow="encrypted-media" ></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" 
+          allow="encrypted-media" ></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" 
+          allow="encrypted-media" ></iframe>
+      </div>
     </div>
   </section>
 
-  <section class='wearefrom'>
+  <div class='wearefrom'>
     <div class='container'>
       <img src="./imagenes/phone.png" alt="Cel Phone" title='Women in Coding'>
       <article class='context_text'>
-        <h2>De dónde venimos</h2>
+        <h2 id="Nosotros">De dónde venimos</h2>
       
         <p> Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
           Universe, are challenged by this point of pale light.<br><br>
@@ -88,12 +89,12 @@
           is no hint that help will come from elsewhere to save us from ourselves.</p>
       </article>
     </div>
-  </section>
+  </div>
 
   <section class="guests">
     
     <div class='container'>
-       <h2> Invitadas/os Estelares </h2> 
+       <h2 id='Entrevistas'> Invitadas/os Estelares </h2> 
     </div>
     
     <ul class='invite'>
@@ -109,7 +110,7 @@
 
   <section class='themes'>
     <div class='container'>
-      <h2>Algunos de nuestros temas</h2>
+      <h2 id='Topicos'>Algunos de nuestros temas</h2>
         <ul class='themeslist'>
           <li>
             <img src="./imagenes/icon1.svg" alt="remote work" title='Remote Work'>  
@@ -135,7 +136,7 @@
     <div class='container'>
       <h2>¿Querés las últimas novedades?</h2>
       <div class='buttons'>
-        Escuchá los episodios
+        <a href="https://syntax.fm/" target='_blank'>Escuchá los episodios</a> 
       </div>  
     </div>
       
@@ -147,29 +148,24 @@
       <p>© 2020— Hello blue pale dot</p>  
       <ul class='socialmedia'>
         <li> 
-          <a href='#'>
-          <i class='fa fa-spotify'></i>
-        </a>
+          <a href='https://www.spotify.com/' target='_blank' >
+          <i class='fa fa-spotify'></i></a>
         </li>
         <li> 
-          <a href='#'>
-          <i class='fa fa-instagram'></i>
-        </a>
+          <a href='https://www.instagram.com/' target='_blank'>
+          <i class='fa fa-instagram'></i></a>
         </li>
         <li> 
-          <a href='#'>
-          <i class='fa fa-twitter'></i>
-        </a>
+          <a href='https://www.twitter.com/' target='_blank'>
+          <i class='fa fa-twitter'></i></a>
         </li>
         <li> 
-          <a href='#'>
-          <i class='fa fa-facebook'></i>
-        </a>
+          <a href='https://www.facebook.com/' target='_blank'>
+          <i class='fa fa-facebook'></i></a>
         </li>
         <li> 
-          <a href='#'>
-          <i class='fa fa-telegram'></i>
-        </a>
+          <a href='https://www.telegram.com/' target='_blank'> 
+          <i class='fa fa-telegram'></i></a>
         </li>
       </ul>
     </div>
