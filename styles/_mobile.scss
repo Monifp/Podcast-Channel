@@ -1,4 +1,4 @@
-@import './styles/_variables.scss';
+@import './_variables.scss';
 
 
 .container {
@@ -7,16 +7,36 @@
 }
 
 .buttons {
+    text-decoration: none;
     background-color: $button-color;
     text-transform: uppercase;
     text-align: center;
     padding: 13px 0;
-    font-family: $font-primary
+    font-family: $font-primary;
+    font-weight: 500;
+    line-height: 22px;
+    color: $text-color;
+    transition: .3s;
+    
 
+    a {
+        text-decoration: none;
+        
+    }
+
+    &:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        transition: .3s;
+        a {
+            color: white;
+            transition: .3s;
+        }
+    }
 }
 
 header {
     background-color: white;
+
 
     nav {
         display: flex;
@@ -56,18 +76,24 @@ header {
         } 
 
         .menulist {
-        display: none; 
+        display: none;
         background-color: $primary-color;
         position: absolute;
         width: 100%;
         top: 44px;
         left: 0;
 
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
             li {
-                color: white;
+                
                 padding: 12px 16px;
                 box-sizing: border-box;  
                 text-transform: uppercase;
+                            
             }
         }   
     }
@@ -110,12 +136,13 @@ p {
 
     .podcast {
         padding: 16px 0 156px 0;
-      
+        
     }
 
     iframe {
-        width: 100%;
+        width: 100% ;
         margin-top: 11px;
+        overflow-x: hidden;                         
     }
 
     &:first-child {
@@ -136,8 +163,7 @@ p {
             width: 100%;
         }
         
-    
-        h2 {
+            h2 {
             color: $text-color;
             font-family: $font-secondary;
             font-size: 36px;
@@ -194,7 +220,7 @@ p {
                 font-size: 24px;
                 font-weight: 800;
             }
-            
+          
         }
     }
 }
@@ -203,6 +229,7 @@ p {
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     width: 100%; 
+
     .container {
         padding: 64px 0 67px 0; 
     }
@@ -215,25 +242,24 @@ p {
             line-height: 42px;
             font-family: $font-secondary;
         }
-    }
-    
-    footer {
+}
+        footer {
         .container {
             text-align: center;
 
-            p{
+            p {
                 margin: 24px 0 16px 0;
             }
         
             .socialmedia {
                 display: grid;
-                grid-template-columns: repeat(5, 1fr); 
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+                margin-bottom: 16px;
 
                 a {
                     color: $text-color;
-
+                   
                 }
-    
             }
         }
     }    

@@ -57,11 +57,30 @@ table {
     margin: 0 auto;
   }
   .buttons {
+    text-decoration: none;
     background-color: #00F3BB;
     text-transform: uppercase;
     text-align: center;
     padding: 13px 0;
     font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    line-height: 22px;
+    color: #060A24;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .buttons a {
+    text-decoration: none;
+  }
+  .buttons:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .buttons:hover a {
+    color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   header {
     background-color: white;
@@ -110,8 +129,11 @@ table {
     top: 44px;
     left: 0;
   }
-  header nav .menulist li {
+  header nav .menulist a {
+    text-decoration: none;
     color: white;
+  }
+  header nav .menulist li {
     padding: 12px 16px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -154,6 +176,7 @@ table {
   .spotify iframe {
     width: 100%;
     margin-top: 11px;
+    overflow-x: hidden;
   }
   .spotify:first-child {
     margin-top: 0;
@@ -239,8 +262,9 @@ table {
   footer .container .socialmedia {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 16px;
   }
   footer .container .socialmedia a {
     color: #060A24;
@@ -257,6 +281,24 @@ table {
     text-align: center;
     padding: 18px 0;
     font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    line-height: 24px;
+    color: #060A24;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .buttons a {
+    text-decoration: none;
+  }
+  .buttons:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .buttons:hover a {
+    color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   header {
     background-color: white;
@@ -294,7 +336,17 @@ table {
   }
   header nav .menulist li {
     display: inline-block;
+  }
+  header nav .menulist li a {
+    text-decoration: none;
     color: #060A24;
+  }
+  header nav .menulist li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header nav .menulist li a:hoveractive {
+    color: rgba(6, 10, 36, 0.56);
   }
   .maintitle {
     background-color: white;
@@ -349,9 +401,11 @@ table {
         grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 16px 0 236.6px 0;
+    overflow-x: hidden;
   }
   .spotify iframe {
     width: 100%;
+    height: 232px;
     margin-top: auto;
   }
   .wearefrom {
@@ -414,8 +468,8 @@ table {
   .themes .container .themeslist {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .themes .container h3 {
     font-size: 24px;
@@ -467,9 +521,6 @@ table {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 36px;
-  }
-  footer .container .socialmedia li a {
-    color: #060A24;
   }
 }
 /*# sourceMappingURL=style.css.map */
